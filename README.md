@@ -29,13 +29,14 @@ Por ejemplo: minikube mount "C:\Users\pepito\Documentos\static-website:/mnt/data
 4. configuramos los manifestos en un editor.
 5. Aplicamos los manifiestos desde el directorio k8s-manifests:
    
-kubectl apply -f volumes/static-website-pv.yaml
+kubectl apply -f volumes\web-pv.yaml 
 
-kubectl apply -f volumes/static-website-pvc.yaml
+kubectl apply -f volumes\web-pvc.yaml 
 
-kubectl apply -f deployments/static-website-deployment.yaml
+kubectl apply -f deployments\web-deployment.yaml 
 
-kubectl apply -f services/static-website-service.yaml
+kubectl apply -f services\web-service.yaml
+
 
 7. Por último, acceder a la aplicacion con el comando:
    
